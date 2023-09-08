@@ -1,0 +1,36 @@
+<div>
+    {% extends "EstampasVoodoo/inicio.html" %}
+    {% load static %}
+    
+        {% block bloqueDinamico %}
+            <!-- about section start -->
+            <div class="about_section layout_padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about_taital_main">
+                            <div class="about_taital">Crear Cliente</div>
+                            <p class="about_text">Ingrese a esta opcion para desplegar el formulario de registro de cliente</p>
+                            <div class="read_bt"><a href="{% url 'setCliente' %}">Crear Cliente</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about_taital_main">
+                            <div class="about_taital">Buscar Cliente</div>
+                            <p class="about_text">Ingrese el nombre del cliente que desea buscar</p>
+                            <div class="read_bt"><a href="{% url 'getCliente' %}">Buscar Cliente</a></div>
+                            </div>
+                        </div>
+            <!--
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'setCliente' %}">Crear cliente</a></li>
+                    <li><a href="{% url 'getCliente' %}">Buscar cliente</a></li>
+                </ul>
+            </div>
+            -->
+            <!--
+            <p>Hola soy un cliente</p>
+            -->
+        {% endblock %}
+</div>
